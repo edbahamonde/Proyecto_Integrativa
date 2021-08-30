@@ -1,10 +1,20 @@
 const { sequelize }= require('../database/database');
 const { Sequelize } = require('sequelize');
 const usuarioModel = sequelize.define('usuarios',{
-    
-    "nombreusuario": Sequelize.STRING,
-    "contrasenausuario": Sequelize.STRING
-
+  idusuario: {
+    type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true // Automatically gets converted to SERIAL for postgres
+  },
+  nombreusuario: {
+    type: Sequelize.STRING,
+  },
+  contrasenausuario: {
+    type: Sequelize.STRING,
+  }
+  
+}, {
+  timestamps: false
 });
 
   sequelize.authenticate().then(() => {
