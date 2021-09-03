@@ -1,0 +1,55 @@
+<div class="center-content">
+    <mat-card class="example-card">
+      <mat-card-header class="logo">
+        <img class="img_logo" src="https://images.vexels.com/media/users/3/137629/isolated/preview/469bb3e9173916f774872a03fc506d90-logotipo-de-infinito-lineal-infinito.png" alt="">
+      </mat-card-header>
+      <mat-card-content>
+        <mat-tab-group  mat-align-tabs="center">
+          <mat-tab label="Ingreso">
+            <mat-card-title class="card-title"> Ingresa en AppGYM! </mat-card-title>
+            <mat-form-field class="example-full-width">
+              <mat-label>Nombre de usuario</mat-label>
+              <input type="text" matInput placeholder="Usuario" value="" [(ngModel)]="nombre_usuario">
+              <mat-icon matSuffix>person_outline</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Contraseña</mat-label>
+              <input type="password" matInput placeholder="Contraseña" [(ngModel)]="password">
+              <mat-icon matSuffix>vpn_key</mat-icon>
+            </mat-form-field>
+            <button mat-button color="primary" (click)="login()">Ingresar</button>
+          </mat-tab>
+          <mat-tab label="Registro">
+            <mat-card-title class="card-title"> Regístrate en AppGYM! </mat-card-title>
+            <mat-form-field class="example-full-width">
+              <mat-label>Nombre de Usuario</mat-label>
+              <input type="text" matInput placeholder="Usuario" value="" [(ngModel)]="re_nombre_usuario">
+              <mat-icon matSuffix>person_outline</mat-icon>
+            </mat-form-field>
+  
+            <mat-form-field class="example-full-width">
+                <mat-label>Fecha de nacimiento</mat-label>
+                <input matInput placeholder="Ejemplo: '9/25/2021' - D/M/A" [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Contraseña</mat-label>
+              <input type="password" matInput placeholder="Contraseña" [(ngModel)]="r_password">
+              <mat-icon matSuffix>vpn_key</mat-icon>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Contraseña</mat-label>
+              <input type="password" matInput placeholder="Confirmar Contraseña" [(ngModel)]="rc_password">
+              <mat-icon matSuffix>vpn_key</mat-icon>
+            </mat-form-field>
+            <button mat-button color="primary" (click)="register()">Registrarse</button>
+          </mat-tab>
+        </mat-tab-group>
+  
+      </mat-card-content>
+  
+    </mat-card>
+  </div>
