@@ -1,1 +1,11 @@
-<p>reloj works!</p>
+<div class="content" role="main">
+    {{title}}
+</div>
+<div class="card">
+    <p>{{time.toISOString().substr(11, 8)}}</p>
+</div>
+<div class="card highlight-card card-small">
+    <button style="margin:5px" (click)="startTimer()">Start</button>
+    <button style="margin:5px" (click)="pauseTimer()">ll</button>
+    <button style="margin:5px" (click)="resetTimer()">Reset</button>
+</div>
