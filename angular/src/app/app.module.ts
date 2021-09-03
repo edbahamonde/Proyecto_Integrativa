@@ -8,11 +8,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //material.ts
 import { MaterialModule } from './material';
 import { LoginComponent } from './login/login.component';
+import { TabComponent } from './tab/tab.component';
+import { TolbaComponent } from './tolba/tolba.component';
+import { RelojComponent } from './reloj/reloj.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    TabComponent,
+    TolbaComponent,
+    RelojComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +27,6 @@ import { LoginComponent } from './login/login.component';
     MaterialModule
   ],
   providers: [],
-  bootstrap: [LoginComponent]
+  bootstrap: [/*LoginComponent,*/ TabComponent, TolbaComponent]
 })
 export class AppModule { }
