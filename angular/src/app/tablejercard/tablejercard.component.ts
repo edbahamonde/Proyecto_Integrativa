@@ -15,6 +15,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './tablejercard.component.html',
   styleUrls: ['./tablejercard.component.scss']
 })
+
 export class TablejercardComponent{
   displayedColumns: string[] = ['position'];
   dataSource = ELEMENT_DATA;

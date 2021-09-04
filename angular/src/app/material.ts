@@ -17,6 +17,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatDialogModule} from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { RouterModule } from '@angular/router';
         MatTableModule,
         MatDialogModule,
         CommonModule,
-        RouterModule],
+        RouterModule,
+        MatExpansionModule],
     exports: [ BrowserAnimationsModule,
         MatCardModule,
         MatTabsModule,
@@ -53,7 +55,8 @@ import { RouterModule } from '@angular/router';
         MatTableModule,
         MatDialogModule,
         CommonModule,
-        RouterModule]
+        RouterModule,
+        MatExpansionModule]
 })
 
 export class MaterialModule { }

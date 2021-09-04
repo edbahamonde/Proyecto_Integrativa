@@ -16,6 +16,8 @@ import { EjercardComponent } from './ejercard/ejercard.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TablejercardComponent } from './tablejercard/tablejercard.component';
 import { DialogeditarComponent } from './dialogeditar/dialogeditar.component';
+import { BuscarComponent } from './buscar/buscar.component';
+import { TableitemsComponent } from './tableitems/tableitems.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { DialogeditarComponent } from './dialogeditar/dialogeditar.component';
     RelojComponent,
     EjercardComponent,
     TablejercardComponent,
-    DialogeditarComponent
+    DialogeditarComponent,
+    BuscarComponent,
+    TableitemsComponent
   ],
   imports: [
     BrowserModule,
