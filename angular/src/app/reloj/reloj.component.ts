@@ -22,6 +22,7 @@ export class RelojComponent{
   }
 
   resetTimer(){
-    this.time.setSeconds(0);
+    this.time.setSeconds(this.time.setTime(0));
+    clearInterval(this.interval);
   }
 }

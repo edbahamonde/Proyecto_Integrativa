@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { TabComponent } from './tab/tab.component';
 import { TolbaComponent } from './tolba/tolba.component';
 import { RelojComponent } from './reloj/reloj.component';
+import { EjercardComponent } from './ejercard/ejercard.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RelojComponent } from './reloj/reloj.component';
     LoginComponent,
     TabComponent,
     TolbaComponent,
-    RelojComponent
+    RelojComponent,
+    EjercardComponent
   ],
   imports: [
     BrowserModule,
