@@ -13,6 +13,11 @@ import { TolbaComponent } from './tolba/tolba.component';
 import { RelojComponent } from './reloj/reloj.component';
 import { EjercardComponent } from './ejercard/ejercard.component';
 
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { TablejercardComponent } from './tablejercard/tablejercard.component';
+import { DialogeditarComponent } from './dialogeditar/dialogeditar.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +25,9 @@ import { EjercardComponent } from './ejercard/ejercard.component';
     TabComponent,
     TolbaComponent,
     RelojComponent,
-    EjercardComponent
+    EjercardComponent,
+    TablejercardComponent,
+    DialogeditarComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +36,7 @@ import { EjercardComponent } from './ejercard/ejercard.component';
     MaterialModule
   ],
   providers: [],
-  bootstrap: [/*LoginComponent,*/ TabComponent, TolbaComponent]
+  bootstrap: [/*LoginComponent,*/ TabComponent, TolbaComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
