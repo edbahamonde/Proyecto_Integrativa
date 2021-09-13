@@ -18,6 +18,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
         MatDialogModule,
         CommonModule,
         RouterModule,
-        MatExpansionModule],
+        MatExpansionModule,
+        MatListModule],
     exports: [ BrowserAnimationsModule,
         MatCardModule,
         MatTabsModule,
@@ -56,7 +58,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
         MatDialogModule,
         CommonModule,
         RouterModule,
-        MatExpansionModule]
+        MatExpansionModule,
+        MatListModule]
 })
 
 export class MaterialModule { }

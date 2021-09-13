@@ -1,0 +1,21 @@
+<mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Titulo general de ejercicios
+        </mat-panel-title>
+        <mat-panel-description>
+            <mat-icon>fitness_center</mat-icon>
+          </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        Opciones seleccionadas: {{ejercicios.selectedOptions.selected.length}}
+      </p>
+      <mat-selection-list #ejercicios>
+        <mat-list-option *ngFor="let ejercicio of tiposdeEjercicios">
+          {{ejercicio}}
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-expansion-panel>
+</mat-accordion>
+    

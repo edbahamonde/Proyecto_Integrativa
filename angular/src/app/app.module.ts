@@ -18,6 +18,7 @@ import { TablejercardComponent } from './tablejercard/tablejercard.component';
 import { DialogeditarComponent } from './dialogeditar/dialogeditar.component';
 import { BuscarComponent } from './buscar/buscar.component';
 import { TableitemsComponent } from './tableitems/tableitems.component';
+import { CarduserComponent } from './carduser/carduser.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { TableitemsComponent } from './tableitems/tableitems.component';
     TablejercardComponent,
     DialogeditarComponent,
     BuscarComponent,
-    TableitemsComponent
+    TableitemsComponent,
+    CarduserComponent
   ],
   imports: [
     BrowserModule,
