@@ -20,6 +20,7 @@ import { BuscarComponent } from './buscar/buscar.component';
 import { TableitemsComponent } from './tableitems/tableitems.component';
 import { CarduserComponent } from './carduser/carduser.component';
 
+import { routing } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -39,10 +40,11 @@ import { CarduserComponent } from './carduser/carduser.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    routing
   ],
   providers: [],
-  bootstrap: [/*LoginComponent,*/ TabComponent, TolbaComponent],
+  bootstrap: [/*LoginComponent, TabComponent, TolbaComponent */AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

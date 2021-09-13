@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -13,7 +15,7 @@ export class LoginComponent{
   r_password:string;
   rc_password:string;
 
-  constructor(private snackBar:MatSnackBar){
+  constructor(private snackBar:MatSnackBar, private router:Router){
 
   }
   register() {
@@ -21,9 +23,10 @@ export class LoginComponent{
   }
   login() {
     if(this.nombre_usuario=="admin" && this.password=="admin"){
-        this.snackBar.open('Entró con éxito :D','',{duration:1000})
+        this.snackBar.open('Entró con éxito!!!','',{duration:3000});
+        this.router.navigate(['/appgym']);
     }else{
-      this.snackBar.open('Pusiste mal las credenciales :v','',{duration:1000})
+      this.snackBar.open('Ha colocado mal las credenciales','',{duration:1000})
     }
   }
 

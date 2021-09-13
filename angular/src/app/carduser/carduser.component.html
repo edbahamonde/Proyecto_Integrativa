@@ -8,12 +8,12 @@
         <p>Cambiar datos</p>
         <form class="form-datos">
             <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label>Contraseña</mat-label>
-              <input matInput placeholder="" value="******">
+              <mat-label>Nombre</mat-label>
+              <input matInput [readonly]="false" placeholder="" value="Nombre de usuario">
             </mat-form-field>
             <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Usuario</mat-label>
-                <input matInput placeholder="" value="Nombre de usuario">
+                <mat-label>Edad</mat-label>
+                <input matInput [readonly]="false" placeholder="" value="17">
               </mat-form-field>
           </form>
     </mat-card-content>
