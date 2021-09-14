@@ -1,7 +1,13 @@
-table{
+.table{
     margin: auto;
     width: 80%;
 }
 .conten_table{
+    padding: 15px;
+}
+.grid{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
     padding: 15px;
 }

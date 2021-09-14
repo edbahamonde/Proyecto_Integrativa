@@ -7,6 +7,7 @@ import { Component} from '@angular/core';
 })
 export class RelojComponent{
   title = 'Watch';
+  segundos_end = 8;
 
   interval;
   time = new Date(null);
@@ -14,6 +15,7 @@ export class RelojComponent{
   startTimer(){
     this.interval = setInterval(() => {
       this.time.setSeconds(this.time.getSeconds() + 1);
+      this.endTimer();
     }, 1000);
   }
 
@@ -24,5 +26,11 @@ export class RelojComponent{
   resetTimer(){
     this.time.setSeconds(this.time.setTime(0));
     clearInterval(this.interval);
+  }
+
+  endTimer(){
+    if(this.time.getSeconds() == this.segundos_end.valueOf()){
+      clearInterval(this.interval);
+    }
   }
 }

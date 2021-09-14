@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 export interface PeriodicElement {
   position: number;
@@ -16,7 +16,29 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./tablejercard.component.scss']
 })
 
-export class TablejercardComponent{
+export class TablejercardComponent implements OnInit {
+  title = 'angular';
+  public cards:Array<any> = []
+
   displayedColumns: string[] = ['position'];
   dataSource = ELEMENT_DATA;
+
+  ngOnInit(): void {
+    
+    this.cards = [
+      {
+        nombre_ejercicio:'Nombre ejercicio',
+        tiempo_ejercicio: 5
+      },
+      {
+        nombre_ejercicio:'Nombre ejercicio2',
+        tiempo_ejercicio: 2
+      },
+      {
+        nombre_ejercicio:'Nombre ejercicio3',
+        tiempo_ejercicio: 3
+      }
+    ]
+
+  }
 }

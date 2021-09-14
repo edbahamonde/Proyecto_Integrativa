@@ -1,7 +1,5 @@
-<div class="conten_table">
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
-        <!-- Position Column -->
+<!--<div class="conten_table">
+    <table class="table" mat-table [dataSource]="dataSource" class="mat-elevation-z8">
         <ng-container matColumnDef="position">
             <th mat-header-cell *matHeaderCellDef> Ejercicios de su rutina </th>
             <td mat-cell *matCellDef="let element"> <app-ejercard></app-ejercard> </td>
@@ -10,4 +8,7 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
+</div>-->
+<div class="grid">
+    <app-ejercard *ngFor="let card of cards"></app-ejercard>
 </div>

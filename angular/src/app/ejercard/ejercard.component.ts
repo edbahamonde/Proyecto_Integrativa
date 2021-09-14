@@ -11,7 +11,12 @@ export interface DialogData {
   styleUrls: ['./ejercard.component.scss']
 })
 export class EjercardComponent {
-  constructor(public dialog: MatDialog) {}
+  
+  tiempo:number;
+  
+  constructor(public dialog: MatDialog) {
+    this.tiempo = 10;
+  }
 
   openDialog() {
     this.dialog.open(DialogDataExampleDialog, {

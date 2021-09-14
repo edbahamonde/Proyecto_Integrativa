@@ -19,6 +19,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import {MatListModule} from '@angular/material/list';
         CommonModule,
         RouterModule,
         MatExpansionModule,
-        MatListModule],
+        MatListModule, 
+        YouTubePlayerModule],
     exports: [ BrowserAnimationsModule,
         MatCardModule,
         MatTabsModule,
@@ -59,7 +61,8 @@ import {MatListModule} from '@angular/material/list';
         CommonModule,
         RouterModule,
         MatExpansionModule,
-        MatListModule]
+        MatListModule, 
+        YouTubePlayerModule]
 })
 
 export class MaterialModule { }

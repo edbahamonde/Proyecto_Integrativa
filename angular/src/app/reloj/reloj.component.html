@@ -1,4 +1,12 @@
 <mat-card class="watch_card">
+    <youtube-player 
+        videoId="2tXQbi16EdI" 
+        suggestedQuality="highres"
+        [height]="250" 
+        [width]="500" 
+        [startSeconds]="10"
+        [endSeconds]="">
+    </youtube-player>
     <mat-card-content>
         <p class="num_card"> {{time.toISOString().substr(11, 8)}} </p>
     </mat-card-content>
