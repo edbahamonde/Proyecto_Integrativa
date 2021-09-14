@@ -1,8 +1,10 @@
 const { usuarioModel } = require('../models/usuario');
 const {verificacion, app }= require("../index");
 //*Se buscara un usuario
-const getUsers= async (req,res) => { 
-    await usuarioModel.findOne({attributes:["nombreusuario"]})
+const loginUsers= async (req,res) => { 
+    const {nombre,contrasena}=req.body;
+    
+    await usuarioModel.findOne({attributes:["nombreusuario"], where:{nombreusuario:nombre,contrasenausuario:contrasena}})
     .then(usuarios =>{
         const resultados = JSON.stringify(usuarios)
         console.log(resultados)
@@ -33,6 +35,7 @@ const createUsers= async (req,res) => {
      })
 };
 module.exports = {
-    getUsers,
+    
+    loginUsers,
     createUsers
 }

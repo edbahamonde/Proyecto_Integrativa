@@ -19,6 +19,7 @@ import { DialogeditarComponent } from './dialogeditar/dialogeditar.component';
 import { BuscarComponent } from './buscar/buscar.component';
 import { TableitemsComponent } from './tableitems/tableitems.component';
 import { CarduserComponent } from './carduser/carduser.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { routing } from './app-routing.module';
 
@@ -41,7 +42,8 @@ import { routing } from './app-routing.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    routing
+    routing,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [/*LoginComponent, TabComponent, TolbaComponent */AppComponent],
