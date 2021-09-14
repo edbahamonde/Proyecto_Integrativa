@@ -1,4 +1,4 @@
-import {Component, Inject} from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 export interface DialogData {
@@ -10,7 +10,9 @@ export interface DialogData {
   templateUrl: './ejercard.component.html',
   styleUrls: ['./ejercard.component.scss']
 })
-export class EjercardComponent {
+export class EjercardComponent implements OnInit{
+  
+  @Input() datosEntrantes:any;
   
   tiempo:number;
   
@@ -24,6 +26,10 @@ export class EjercardComponent {
         animal: 'panda'
       }
     });
+  }
+
+  ngOnInit():void{
+
   }
 }
 

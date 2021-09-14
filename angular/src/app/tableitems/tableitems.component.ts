@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./tableitems.component.scss']
 })
 export class TableitemsComponent {
-  tiposdeEjercicios: string[] = ['Ejer1', 'Ejer2', 'Ejer3', 'Ejer4'];
+  tiposdeEjercicios: string[] = ['Cinta de Andar', 'Bicicleta Elíptica', 'Saltos Estrella', 'Flexión de codo'];
 }

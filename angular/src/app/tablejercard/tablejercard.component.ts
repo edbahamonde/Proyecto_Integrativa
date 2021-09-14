@@ -27,16 +27,19 @@ export class TablejercardComponent implements OnInit {
     
     this.cards = [
       {
-        nombre_ejercicio:'Nombre ejercicio',
-        tiempo_ejercicio: 5
+        nombre_ejercicio:'Elevación de piernas',
+        tiempo_ejercicio: 5,
+        video: "https://thumbs.gfycat.com/BogusRawBalloonfish-max-1mb.gif"
       },
       {
-        nombre_ejercicio:'Nombre ejercicio2',
-        tiempo_ejercicio: 2
+        nombre_ejercicio:'Ejercicios de gluteos',
+        tiempo_ejercicio: 2,
+        video: "https://thumbs.gfycat.com/SparseThatDanishswedishfarmdog-max-1mb.gif"
       },
       {
-        nombre_ejercicio:'Nombre ejercicio3',
-        tiempo_ejercicio: 3
+        nombre_ejercicio:'Morilla',
+        tiempo_ejercicio: 3,
+        video: "https://thumbs.gfycat.com/EvenHideousGuillemot-max-1mb.gif"
       }
     ]
 
